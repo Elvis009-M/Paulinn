@@ -96,7 +96,7 @@
                     <a href="#admissions" class="text-sm font-semibold text-darkNavy/80 transition hover:text-brandRed">Admissions</a>
                     <a href="#student-life" class="text-sm font-semibold text-darkNavy/80 transition hover:text-brandRed">Student Life</a>
                     <a href="#parent-info" class="text-sm font-semibold text-darkNavy/80 transition hover:text-brandRed">Parents</a>
-                    <a href="#news" class="text-sm font-semibold text-darkNavy/80 transition hover:text-brandRed">News</a>
+                    <a href="#announcements" class="text-sm font-semibold text-darkNavy/80 transition hover:text-brandRed">News</a>
                     <a href="#contact" class="text-sm font-semibold text-darkNavy/80 transition hover:text-brandRed">Contact</a>
                 </nav>
 
@@ -107,22 +107,22 @@
                     </a>
                 </div>
 
-                <!-- Mobile Menu Toggle Button -->
-                <button id="mobileMenuBtn" type="button" class="lg:hidden p-2.5 rounded-xl text-darkNavy bg-amber-50 hover:bg-amber-100 focus:outline-none transition z-50 border border-amber-200" aria-label="Toggle navigation menu">
-                    <i id="menuIcon" class="fa-solid fa-bars text-xl text-brandRed"></i>
+                <!-- Mobile Menu Toggle Button (Standalone button with pointer events explicitly reset) -->
+                <button id="mobileMenuBtn" aria-label="Toggle menu" class="lg:hidden relative z-50 w-12 h-12 flex items-center justify-center rounded-xl bg-amber-50 border border-amber-200 text-brandRed hover:bg-amber-100 transition focus:outline-none">
+                    <i id="menuIcon" class="fa-solid fa-bars text-xl"></i>
                 </button>
             </div>
         </div>
 
-        <!-- Mobile Menu Drawer -->
-        <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-slate-200 px-6 pt-4 pb-6 space-y-3 shadow-2xl absolute top-20 left-0 w-full z-40 transition-all duration-300">
+        <!-- Mobile Menu Drawer (Starts hidden with display: none via Tailwind's 'hidden' class, controlled via JS toggle) -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-slate-200 px-6 pt-4 pb-6 space-y-3 shadow-2xl w-full absolute top-20 left-0 z-40 transition-all duration-300">
             <a href="#hero" class="mobile-link block px-4 py-2.5 rounded-xl text-base font-semibold text-darkNavy hover:bg-amber-50 hover:text-brandRed transition">Home</a>
             <a href="#about" class="mobile-link block px-4 py-2.5 rounded-xl text-base font-semibold text-darkNavy hover:bg-amber-50 hover:text-brandRed transition">About Us</a>
             <a href="#academics" class="mobile-link block px-4 py-2.5 rounded-xl text-base font-semibold text-darkNavy hover:bg-amber-50 hover:text-brandRed transition">Academics</a>
             <a href="#admissions" class="mobile-link block px-4 py-2.5 rounded-xl text-base font-semibold text-darkNavy hover:bg-amber-50 hover:text-brandRed transition">Admissions</a>
             <a href="#student-life" class="mobile-link block px-4 py-2.5 rounded-xl text-base font-semibold text-darkNavy hover:bg-amber-50 hover:text-brandRed transition">Student Life</a>
             <a href="#parent-info" class="mobile-link block px-4 py-2.5 rounded-xl text-base font-semibold text-darkNavy hover:bg-amber-50 hover:text-brandRed transition">Parent Information</a>
-            <a href="#news" class="mobile-link block px-4 py-2.5 rounded-xl text-base font-semibold text-darkNavy hover:bg-amber-50 hover:text-brandRed transition">News and Events</a>
+            <a href="#announcements" class="mobile-link block px-4 py-2.5 rounded-xl text-base font-semibold text-darkNavy hover:bg-amber-50 hover:text-brandRed transition">News and Events</a>
             <a href="#contact" class="mobile-link block px-4 py-2.5 rounded-xl text-base font-semibold text-darkNavy hover:bg-amber-50 hover:text-brandRed transition">Contact</a>
             <div class="pt-3">
                 <a href="#admissions" class="mobile-link block w-full text-center bg-brandRed text-white font-heading font-bold py-3.5 rounded-xl shadow-md">
@@ -202,7 +202,7 @@
                         A Continuous Journey of Success From <span class="text-brandRed">Nursery to JHS 3</span>
                     </h2>
                     <p class="text-slate-600 leading-relaxed text-base sm:text-lg">
-                        Paulinn School Complex in Zenu provides an uninterrupted educational pathway. Keeping students within a singular, values-driven environment from their earliest nursery days all the way through their Junior High graduation fosters deep community bonds and consistent academic guidance.
+                        At Paulinn School Complex in Zenu, we provide an uninterrupted educational pathway. Keeping students within a singular, values-driven environment from their earliest nursery days all the way through their Junior High graduation fosters deep community bonds and consistent academic guidance.
                     </p>
                     <p class="text-slate-600 leading-relaxed">
                         We blend a robust Ghanaian curriculum with moral discipline, critical thinking exercises, and creative development, ensuring every child becomes an asset to society.
@@ -267,4 +267,517 @@
                     <div>
                         <div class="w-16 h-16 bg-brandRed/10 rounded-2xl flex items-center justify-center text-brandRed text-2xl font-bold mb-6 group-hover:bg-brandRed group-hover:text-white transition">
                             <i class="fa-solid fa-book-open"></i>
-                   
+                        </div>
+                        <span class="text-xs uppercase tracking-wider text-brandRed font-extrabold">Primary Education</span>
+                        <h3 class="font-heading text-2xl font-bold text-darkNavy mt-1 mb-3">Primary School</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">Comprehensive core instruction covering literacy, numeracy, science, and creative arts to build analytical thinkers.</p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-slate-100 flex items-center justify-between text-sm font-semibold">
+                        <span class="text-darkNavy">Primary 1 to Primary 6</span>
+                        <a href="#admissions" class="text-brandRed hover:underline flex items-center gap-1">Enquire <i class="fa-solid fa-chevron-right text-xs"></i></a>
+                    </div>
+                </div>
+
+                <!-- Card 3: JHS -->
+                <div class="bg-white rounded-3xl p-8 shadow-sm border border-slate-200 hover:shadow-xl transition duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-16 h-16 bg-brandRed/10 rounded-2xl flex items-center justify-center text-brandRed text-2xl font-bold mb-6 group-hover:bg-brandRed group-hover:text-white transition">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <span class="text-xs uppercase tracking-wider text-brandRed font-extrabold">Junior High</span>
+                        <h3 class="font-heading text-2xl font-bold text-darkNavy mt-1 mb-3">Junior High School</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">Advanced academic rigor and intensive exam preparation guiding students smoothly toward success in basic education certifications.</p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-slate-100 flex items-center justify-between text-sm font-semibold">
+                        <span class="text-darkNavy">JHS 1, JHS 2 & JHS 3</span>
+                        <a href="#admissions" class="text-brandRed hover:underline flex items-center gap-1">Enquire <i class="fa-solid fa-chevron-right text-xs"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY PARENTS CHOOSE US -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <span class="text-brandRed font-bold text-xs uppercase tracking-widest bg-brandRed/10 px-3 py-1 rounded-full">Our Institutional Values</span>
+                <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-darkNavy">Why Parents Choose Paulinn School Complex</h2>
+                <p class="text-slate-600">We stand on pillars of discipline, quality mentorship, and genuine partnership with families.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-8 rounded-3xl bg-softBg border border-amber-200/50 space-y-4">
+                    <div class="w-12 h-12 rounded-xl bg-brandRed text-white flex items-center justify-center text-xl shadow-md">
+                        <i class="fa-solid fa-chalkboard-user"></i>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold text-darkNavy">Exceptional Teaching Staff</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">Dedicated, experienced educators who provide personal guidance to every learner across all classes.</p>
+                </div>
+                <div class="p-8 rounded-3xl bg-softBg border border-amber-200/50 space-y-4">
+                    <div class="w-12 h-12 rounded-xl bg-brandRed text-white flex items-center justify-center text-xl shadow-md">
+                        <i class="fa-solid fa-shield-heart"></i>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold text-darkNavy">Moral & Character Discipline</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">We instill integrity, respect, and responsibility alongside academic brilliance.</p>
+                </div>
+                <div class="p-8 rounded-3xl bg-softBg border border-amber-200/50 space-y-4">
+                    <div class="w-12 h-12 rounded-xl bg-brandRed text-white flex items-center justify-center text-xl shadow-md">
+                        <i class="fa-solid fa-comments"></i>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold text-darkNavy">Active Parent Communication</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">Transparent channels ensuring parents remain constantly updated on student progress and school events.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CAMPUS & FACILITIES -->
+    <section class="py-24 bg-softBg border-t border-amber-200/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <span class="text-brandRed font-bold text-xs uppercase tracking-widest bg-brandRed/10 px-3 py-1 rounded-full">Campus Environment</span>
+                <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-darkNavy">Designed for Safety and Focus</h2>
+                <p class="text-slate-600">Explore our clean, secure, and well-equipped campus facilities supporting students from Nursery through JHS 3.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm border border-slate-200">
+                    <div class="h-52 bg-slate-800 flex items-center justify-center text-slate-400 text-sm font-medium">
+                        [Illustrative Classroom Image]
+                    </div>
+                    <div class="p-8 space-y-2">
+                        <h3 class="font-heading font-bold text-darkNavy text-xl">Spacious Classrooms</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">Well-lit, ventilated learning environments that ensure comfort and effective student-teacher interaction.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm border border-slate-200">
+                    <div class="h-52 bg-slate-800 flex items-center justify-center text-slate-400 text-sm font-medium">
+                        [Illustrative Library Image]
+                    </div>
+                    <div class="p-8 space-y-2">
+                        <h3 class="font-heading font-bold text-darkNavy text-xl">Library & Resources</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">Stocked with curriculum-aligned textbooks and reading materials to spark a genuine love for reading.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm border border-slate-200">
+                    <div class="h-52 bg-slate-800 flex items-center justify-center text-slate-400 text-sm font-medium">
+                        [Illustrative Playground Image]
+                    </div>
+                    <div class="p-8 space-y-2">
+                        <h3 class="font-heading font-bold text-darkNavy text-xl">Recreation & Sports</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">Safe outdoor spaces encouraging physical fitness, teamwork, and exciting extracurricular activities.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STUDENT LIFE -->
+    <section id="student-life" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-5 space-y-6">
+                    <span class="text-brandRed font-bold text-xs uppercase tracking-widest bg-brandRed/10 px-3 py-1 rounded-full">Beyond Academics</span>
+                    <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-darkNavy">Fostering Well-Rounded Individuals</h2>
+                    <p class="text-slate-600 leading-relaxed">
+                        At Paulinn School Complex, we believe talent development is just as crucial as book learning. Our students participate in sports, cultural arts, spelling bees, and leadership roles.
+                    </p>
+                    <ul class="space-y-3 text-sm text-darkNavy font-semibold">
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-brandRed"></i> Inter-house athletics and ball games</li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-brandRed"></i> Cultural dance, drama, and choir</li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-brandRed"></i> Prefectship and student leadership training</li>
+                    </ul>
+                </div>
+                <div class="lg:col-span-7 bg-softBg rounded-3xl p-8 border border-amber-200/60 shadow-sm">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 space-y-2">
+                            <i class="fa-solid fa-futbol text-brandRed text-2xl"></i>
+                            <h4 class="font-heading font-bold text-darkNavy">Sports & Athletics</h4>
+                            <p class="text-xs text-slate-600">Building physical endurance and sportsmanship.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 space-y-2">
+                            <i class="fa-solid fa-palette text-brandRed text-2xl"></i>
+                            <h4 class="font-heading font-bold text-darkNavy">Arts & Culture</h4>
+                            <p class="text-xs text-slate-600">Encouraging creative expression and heritage appreciation.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 space-y-2">
+                            <i class="fa-solid fa-users text-brandRed text-2xl"></i>
+                            <h4 class="font-heading font-bold text-darkNavy">Clubs & Societies</h4>
+                            <p class="text-xs text-slate-600">Fostering specialized academic and hobby interests.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 space-y-2">
+                            <i class="fa-solid fa-award text-brandRed text-2xl"></i>
+                            <h4 class="font-heading font-bold text-darkNavy">Leadership</h4>
+                            <p class="text-xs text-slate-600">Empowering responsibility from an early age.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PARENT INFORMATION -->
+    <section id="parent-info" class="py-24 bg-softBg border-t border-amber-200/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <span class="text-brandRed font-bold text-xs uppercase tracking-widest bg-brandRed/10 px-3 py-1 rounded-full">Resources</span>
+                <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-darkNavy">Parent Information Portal</h2>
+                <p class="text-slate-600">Quick access to essential school schedules, uniform guidelines, and regulations.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200 flex items-center justify-between">
+                    <div>
+                        <h3 class="font-heading font-bold text-darkNavy text-lg">School Calendar</h3>
+                        <p class="text-xs text-slate-600 mt-1">Key dates, term beginnings, and holidays.</p>
+                    </div>
+                    <i class="fa-solid fa-calendar-days text-3xl text-brandRed"></i>
+                </div>
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200 flex items-center justify-between">
+                    <div>
+                        <h3 class="font-heading font-bold text-darkNavy text-lg">Uniform Guidelines</h3>
+                        <p class="text-xs text-slate-600 mt-1">Official daily wear and sports attire standards.</p>
+                    </div>
+                    <i class="fa-solid fa-shirt text-3xl text-brandRed"></i>
+                </div>
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200 flex items-center justify-between">
+                    <div>
+                        <h3 class="font-heading font-bold text-darkNavy text-lg">School Policies</h3>
+                        <p class="text-xs text-slate-600 mt-1">Attendance, health, and discipline regulations.</p>
+                    </div>
+                    <i class="fa-solid fa-file-shield text-3xl text-brandRed"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ADMISSIONS & FORM -->
+    <section id="admissions" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-6 space-y-6">
+                    <span class="text-brandRed font-bold text-xs uppercase tracking-widest bg-brandRed/10 px-3 py-1 rounded-full">Admissions Open</span>
+                    <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-darkNavy">Your Child's Next Chapter Starts Here</h2>
+                    <p class="text-slate-600 leading-relaxed">
+                        We are currently accepting admission enquiries for Nursery up to Junior High School (JHS 3). Fill out our quick enquiry form, or reach out instantly via WhatsApp.
+                    </p>
+                    
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-start gap-3">
+                            <div class="w-7 h-7 rounded-full bg-brandRed text-white flex items-center justify-center font-bold text-xs mt-0.5">1</div>
+                            <div>
+                                <h4 class="font-heading font-bold text-darkNavy text-sm">Submit Enquiry</h4>
+                                <p class="text-xs text-slate-600">Provide parent details and choose the desired school level.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-7 h-7 rounded-full bg-brandRed text-white flex items-center justify-center font-bold text-xs mt-0.5">2</div>
+                            <div>
+                                <h4 class="font-heading font-bold text-darkNavy text-sm">Consultation & Visit</h4>
+                                <p class="text-xs text-slate-600">Our administration contacts you to discuss grade placement and a campus tour.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-7 h-7 rounded-full bg-brandRed text-white flex items-center justify-center font-bold text-xs mt-0.5">3</div>
+                            <div>
+                                <h4 class="font-heading font-bold text-darkNavy text-sm">Enrollment</h4>
+                                <p class="text-xs text-slate-600">Complete formal registration and welcome your child to Paulinn School Complex.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-4">
+                        <a href="https://wa.me/233205712404?text=Hello,%20I%20would%20like%20to%20make%20an%20admissions%20enquiry%20for%20Paulinn%20School%20Complex%20(Zenu)." target="_blank" class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-heading font-bold px-7 py-3.5 rounded-xl shadow-lg transition">
+                            <i class="fa-brands fa-whatsapp text-xl"></i>
+                            <span>Enquire via WhatsApp (0205712404)</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Admission Form -->
+                <div class="lg:col-span-6 bg-softBg rounded-3xl p-8 sm:p-10 border border-amber-200/80 shadow-sm">
+                    <h3 class="font-heading text-2xl font-bold text-darkNavy mb-2">Admission Enquiry Form</h3>
+                    <p class="text-xs text-slate-600 mb-6">Complete this demonstration form to receive a prompt call back from our admissions desk.</p>
+                    
+                    <form id="admissionForm" class="space-y-4">
+                        <div>
+                            <label for="parentName" class="block text-xs font-bold text-darkNavy mb-1">Parent / Guardian Name *</label>
+                            <input type="text" id="parentName" required class="w-full bg-white border border-slate-300 rounded-xl px-4 py-3 text-sm text-darkNavy focus:outline-none focus:border-brandRed transition" placeholder="e.g. Kwame Mensah">
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-xs font-bold text-darkNavy mb-1">Telephone Number *</label>
+                            <input type="tel" id="phone" required class="w-full bg-white border border-slate-300 rounded-xl px-4 py-3 text-sm text-darkNavy focus:outline-none focus:border-brandRed transition" placeholder="e.g. 024 000 0000">
+                        </div>
+                        <div>
+                            <label for="level" class="block text-xs font-bold text-darkNavy mb-1">Programme / School Level *</label>
+                            <select id="level" required class="w-full bg-white border border-slate-300 rounded-xl px-4 py-3 text-sm text-darkNavy focus:outline-none focus:border-brandRed transition">
+                                <option value="">Select Level</option>
+                                <option value="Nursery">Nursery</option>
+                                <option value="Kindergarten">Kindergarten (KG 1 & 2)</option>
+                                <option value="Primary">Primary (1 - 6)</option>
+                                <option value="JHS">Junior High School (JHS 1 - 3)</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-xs font-bold text-darkNavy mb-1">Additional Message or Questions</label>
+                            <textarea id="message" rows="3" class="w-full bg-white border border-slate-300 rounded-xl px-4 py-3 text-sm text-darkNavy focus:outline-none focus:border-brandRed transition" placeholder="Tell us about your child's grade level..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-brandRed hover:bg-red-700 text-white font-heading font-bold py-3.5 rounded-xl shadow-lg shadow-brandRed/20 transition">
+                            Submit Admission Enquiry
+                        </button>
+                        <p id="formSuccess" class="hidden text-xs text-emerald-700 font-bold text-center mt-2">Enquiry received successfully! Our admissions office will reach out shortly.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEWS & ANNOUNCEMENTS -->
+    <section id="announcements" class="py-24 bg-softBg border-t border-amber-200/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <span class="text-brandRed font-bold text-xs uppercase tracking-widest bg-brandRed/10 px-3 py-1 rounded-full">Updates</span>
+                <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-darkNavy">News and Announcements</h2>
+                <p class="text-slate-600">Stay informed with the latest updates from around the school community.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <div class="h-44 bg-slate-800 flex items-center justify-center text-slate-400 text-xs">[Sample Announcement Image]</div>
+                        <div class="p-8 space-y-2">
+                            <span class="text-xs font-bold text-brandRed uppercase tracking-wider">Announcement</span>
+                            <h3 class="font-heading font-bold text-darkNavy text-xl">Resumption Date for the New Term</h3>
+                            <p class="text-xs text-slate-600 leading-relaxed">Important information regarding reporting times and requirements for students across all levels.</p>
+                        </div>
+                    </div>
+                    <div class="px-8 pb-8 pt-2">
+                        <span class="text-xs text-slate-400 font-medium">Published: [Insert Date]</span>
+                    </div>
+                </div>
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <div class="h-44 bg-slate-800 flex items-center justify-center text-slate-400 text-xs">[Sample Event Image]</div>
+                        <div class="p-8 space-y-2">
+                            <span class="text-xs font-bold text-brandRed uppercase tracking-wider">Event</span>
+                            <h3 class="font-heading font-bold text-darkNavy text-xl">Parent-Teacher Association Meeting</h3>
+                            <p class="text-xs text-slate-600 leading-relaxed">All parents and guardians are cordially invited to discuss student progress and upcoming projects.</p>
+                        </div>
+                    </div>
+                    <div class="px-8 pb-8 pt-2">
+                        <span class="text-xs text-slate-400 font-medium">Published: [Insert Date]</span>
+                    </div>
+                </div>
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <div class="h-44 bg-slate-800 flex items-center justify-center text-slate-400 text-xs">[Sample Notice Image]</div>
+                        <div class="p-8 space-y-2">
+                            <span class="text-xs font-bold text-brandRed uppercase tracking-wider">Notice</span>
+                            <h3 class="font-heading font-bold text-darkNavy text-xl">Inter-House Sports Competition Notice</h3>
+                            <p class="text-xs text-slate-600 leading-relaxed">Get ready for an exciting day of athletic displays, competitive track events, and house spirit.</p>
+                        </div>
+                    </div>
+                    <div class="px-8 pb-8 pt-2">
+                        <span class="text-xs text-slate-400 font-medium">Published: [Insert Date]</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                <div class="lg:col-span-5 space-y-6">
+                    <span class="text-brandRed font-bold text-xs uppercase tracking-widest bg-brandRed/10 px-3 py-1 rounded-full">Get In Touch</span>
+                    <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-darkNavy">Contact Paulinn School Complex</h2>
+                    <p class="text-slate-600">We welcome your questions, feedback, and visit inquiries.</p>
+                    
+                    <div class="space-y-4 pt-4">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-2xl bg-brandRed/10 text-brandRed flex items-center justify-center text-lg font-bold">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <span class="block text-xs font-semibold text-slate-400">Location</span>
+                                <span class="text-sm font-bold text-darkNavy">Zenu, Ghana</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-2xl bg-brandRed/10 text-brandRed flex items-center justify-center text-lg font-bold">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <span class="block text-xs font-semibold text-slate-400">Telephone</span>
+                                <a href="tel:0205712404" class="text-sm font-bold text-darkNavy hover:text-brandRed">0205712404</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-2xl bg-brandRed/10 text-brandRed flex items-center justify-center text-lg font-bold">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <span class="block text-xs font-semibold text-slate-400">Email</span>
+                                <a href="mailto:enquiries@paulinnschool.edu.gh" class="text-sm font-bold text-darkNavy hover:text-brandRed">enquiries@paulinnschool.edu.gh</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:col-span-7 bg-softBg rounded-3xl p-8 sm:p-10 border border-amber-200/80 shadow-sm">
+                    <h3 class="font-heading text-2xl font-bold text-darkNavy mb-4">Send Us a Message</h3>
+                    <form id="contactForm" class="space-y-4">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label for="contactName" class="block text-xs font-bold text-darkNavy mb-1">Your Name *</label>
+                                <input type="text" id="contactName" required class="w-full bg-white border border-slate-300 rounded-xl px-4 py-3 text-sm text-darkNavy focus:outline-none focus:border-brandRed transition" placeholder="e.g. Ama Serwaa">
+                            </div>
+                            <div>
+                                <label for="contactEmail" class="block text-xs font-bold text-darkNavy mb-1">Your Email / Phone *</label>
+                                <input type="text" id="contactEmail" required class="w-full bg-white border border-slate-300 rounded-xl px-4 py-3 text-sm text-darkNavy focus:outline-none focus:border-brandRed transition" placeholder="e.g. ama@example.com">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="contactMsg" class="block text-xs font-bold text-darkNavy mb-1">Message *</label>
+                            <textarea id="contactMsg" rows="4" required class="w-full bg-white border border-slate-300 rounded-xl px-4 py-3 text-sm text-darkNavy focus:outline-none focus:border-brandRed transition" placeholder="How can we assist you?"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-brandRed hover:bg-red-700 text-white font-heading font-bold py-3.5 rounded-xl shadow-lg shadow-brandRed/20 transition">
+                            Send Message
+                        </button>
+                        <p id="contactSuccess" class="hidden text-xs text-emerald-700 font-bold text-center mt-2">Message sent successfully!</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-darkNavy text-slate-300 py-16 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-slate-800">
+                <div class="space-y-4">
+                    <span class="block font-heading text-xl font-extrabold text-white tracking-tight">Paulinn School Complex</span>
+                    <p class="text-xs text-slate-400 leading-relaxed">Located in Zenu, Ghana. Offering elite education from Nursery to JHS 3 with a commitment to excellence and moral discipline.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-heading font-bold text-sm mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#about" class="hover:text-brandYellow transition">About Us</a></li>
+                        <li><a href="#academics" class="hover:text-brandYellow transition">Academics</a></li>
+                        <li><a href="#admissions" class="hover:text-brandYellow transition">Admissions</a></li>
+                        <li><a href="#student-life" class="hover:text-brandYellow transition">Student Life</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-heading font-bold text-sm mb-4">Parent Portal</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#parent-info" class="hover:text-brandYellow transition">School Calendar</a></li>
+                        <li><a href="#parent-info" class="hover:text-brandYellow transition">Uniform Guidelines</a></li>
+                        <li><a href="#parent-info" class="hover:text-brandYellow transition">School Policies</a></li>
+                        <li><a href="#announcements" class="hover:text-brandYellow transition">Announcements</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-heading font-bold text-sm mb-4">Contact Info</h4>
+                    <ul class="space-y-2 text-xs text-slate-400">
+                        <li><i class="fa-solid fa-location-dot text-brandYellow mr-2"></i> Zenu, Ghana</li>
+                        <li><i class="fa-solid fa-phone text-brandYellow mr-2"></i> 0205712404</li>
+                        <li><i class="fa-solid fa-envelope text-brandYellow mr-2"></i> enquiries@paulinnschool.edu.gh</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500 gap-4">
+                <p>&copy; 2026 Paulinn School Complex. All rights reserved. Demonstration Project.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="hover:text-white transition">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WHATSAPP FLOATING BUTTON -->
+    <a href="https://wa.me/233205712404?text=Hello,%20I%20would%20like%20to%20inquire%20about%20Paulinn%20School%20Complex%20(Zenu)." target="_blank" class="fixed bottom-6 right-6 z-50 bg-emerald-500 hover:bg-emerald-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition duration-300 group" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+        <span class="absolute right-16 bg-white text-darkNavy font-heading text-xs font-bold py-1 px-3 rounded-lg shadow-md opacity-0 group-hover:opacity-100 transition whitespace-nowrap pointer-events-none">Chat with us (0205712404)</span>
+    </a>
+
+    <!-- JAVASCRIPT FOR ROBUST INTERACTIVITY -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            const mobileMenu = document.getElementById('mobileMenu');
+            const menuIcon = document.getElementById('menuIcon');
+            const mobileLinks = document.querySelectorAll('.mobile-link');
+
+            // Safe toggle handler
+            function toggleMenu(forceClose = false) {
+                const isHidden = forceClose || !mobileMenu.classList.contains('hidden');
+                if (isHidden) {
+                    mobileMenu.classList.add('hidden');
+                    menuIcon.classList.remove('fa-xmark');
+                    menuIcon.classList.add('fa-bars');
+                } else {
+                    mobileMenu.classList.remove('hidden');
+                    menuIcon.classList.remove('fa-bars');
+                    menuIcon.classList.add('fa-xmark');
+                }
+            }
+
+            // Click listener on Burger Button
+            if (mobileMenuBtn) {
+                mobileMenuBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    toggleMenu();
+                });
+            }
+
+            // Close menu when clicking individual mobile navigation links
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    toggleMenu(true);
+                });
+            });
+
+            // Close menu when clicking anywhere else on the document
+            document.addEventListener('click', (e) => {
+                if (mobileMenu && !mobileMenu.contains(e.target) && mobileMenuBtn && !mobileMenuBtn.contains(e.target)) {
+                    toggleMenu(true);
+                }
+            });
+
+            // Admission Form Handler (Demo simulation)
+            const admissionForm = document.getElementById('admissionForm');
+            const formSuccess = document.getElementById('formSuccess');
+
+            if (admissionForm) {
+                admissionForm.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    formSuccess.classList.remove('hidden');
+                    admissionForm.reset();
+                    setTimeout(() => {
+                        formSuccess.classList.add('hidden');
+                    }, 6000);
+                });
+            }
+
+            // Contact Form Handler (Demo simulation)
+            const contactForm = document.getElementById('contactForm');
+            const contactSuccess = document.getElementById('contactSuccess');
+
+            if (contactForm) {
+                contactForm.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    contactSuccess.classList.remove('hidden');
+                    contactForm.reset();
+                    setTimeout(() => {
+                        contactSuccess.classList.add('hidden');
+                    }, 6000);
+                });
+            }
+        });
+    </script>
+</body>
+</html>
